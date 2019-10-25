@@ -2,7 +2,8 @@
 Express, sequelize, user creation, authentication and reset password.
 
 
-Just created a .env file on the root project directory with the following variables
+START
+Just create a .env file on the root project directory with the following variables
 
 DB_HOST
 DB_USER
