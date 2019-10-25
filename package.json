@@ -1,0 +1,48 @@
+{
+  "name": "pagchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -w src --ignore __tests__ --exec \"babel-node src\"",
+    "prebuild": "rm -rf dist/*",
+    "build": "babel src -s -D -d dist",
+    "start": "NODE_ENV=production node dist/index.js",
+    "test": "NODE_ENV=test jest --verbose --runInBand --forceExit"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.12",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.16.2",
+    "handlebars": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mime": "^2.4.4",
+    "moment": "^2.24.0",
+    "nodemailer": "^6.2.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.11.0",
+    "rand-token": "^0.4.0",
+    "sequelize": "^5.8.10",
+    "uniqid": "^5.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.0",
+    "supertest": "^4.0.2"
+  }
+}

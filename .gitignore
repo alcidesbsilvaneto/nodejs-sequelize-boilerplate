@@ -1,0 +1,9 @@
+node_modules
+build
+dist
+logs
+public
+__tests__
+.env
+npm-debug.log
+.DS_Store
